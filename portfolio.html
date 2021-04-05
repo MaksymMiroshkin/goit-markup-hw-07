@@ -16,7 +16,7 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/portfolio.css" />
   </head>
   <body>
     <header class="header">
@@ -28,17 +28,17 @@
             lang="en"
             ><span class="logo-txt">Web</span>Studio</a
           >
-          <ul class="navigation-list list">
-            <li class="navigation-item">
-              <a class="navigation-link link" href="./index.html">Студия</a>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./index.html">Студия</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link link current" href="./portfolio.html"
+            <li class="navigation__item">
+              <a class="navigation__link link current" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link link" href="">Контакты</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -65,31 +65,31 @@
       </div>
     </header>
     <main>
-      <!-- PORZTFOLIO -->
+      <!-- PORTFOLIO -->
       <h1 class="visually-hidden">Портфолио</h1>
       <section class="filters">
         <div class="container">
           <h2 class="visually-hidden">Разделы Портфолио</h2>
           <ul class="filter-list list">
-            <li class="filter-list-item">
+            <li class="filter__list-item">
               <button class="btn-portfolio">Все</button>
             </li>
-            <li class="filter-list-item">
+            <li class="filter__list-item">
               <button class="btn-portfolio">Веб-сайты</button>
             </li>
-            <li class="filter-list-item">
+            <li class="filter__list-item">
               <button class="btn-portfolio">Приложения</button>
             </li>
-            <li class="filter-list-item">
+            <li class="filter__list-item">
               <button class="btn-portfolio">Дизайн</button>
             </li>
-            <li class="filter-list-item">
+            <li class="filter__list-item">
               <button class="btn-portfolio">Маркетинг</button>
             </li>
           </ul>
 
           <ul class="portfolio-list list">
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -111,7 +111,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -135,7 +135,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -157,7 +157,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -179,7 +179,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -201,7 +201,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -223,7 +223,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -245,7 +245,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -267,7 +267,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list_item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-works">
                   <img
@@ -293,6 +293,7 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="footer-wraper">
@@ -301,7 +302,7 @@
               ><span class="logo-txt">Web</span>Studio</a
             >
             <address class="address">
-              <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
               <ul class="contacts-footer list">
                 <li class="mail-footer">
                   <a
@@ -321,31 +322,31 @@
           </div>
           <div class="social-footer">
             <h3 class="social-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-            <ul class="icon-list list">
-              <li class="icon-list-items">
-                <a class="icon-items-link" href="">
-                  <svg class="team-icons">
+            <ul class="social__icon-list list">
+              <li class="social__icon-list">
+                <a class="social__icon-link" href="">
+                  <svg class="social__icons">
                     <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="icon-list-items">
-                <a class="icon-items-link" href="">
-                  <svg class="team-icons">
+              <li class="social__icon-list">
+                <a class="social__icon-link" href="">
+                  <svg class="social__icons">
                     <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="icon-list-items">
-                <a class="icon-items-link" href="">
-                  <svg class="team-icons">
+              <li class="social__icon-list">
+                <a class="social__icon-link" href="">
+                  <svg class="social__icons">
                     <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="icon-list-items">
-                <a class="icon-items-link" href="">
-                  <svg class="team-icons">
+              <li class="social__icon-list">
+                <a class="social__icon-link" href="">
+                  <svg class="social__icons">
                     <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
